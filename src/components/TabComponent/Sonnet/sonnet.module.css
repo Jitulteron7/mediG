@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;    
+}
+.container .part1{
+    width: 50%;
+
+}
+
+.container .part2{
+    width: 50%;    
+}
