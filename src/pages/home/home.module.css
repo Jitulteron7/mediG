@@ -4,10 +4,122 @@
 }
 
 .container .part1{
-    background-color:rgb(255, 246, 238);
+    background-color:#fff6ee;    
+    min-height: 90vh;
+    display: flex;        
 }
 
-.container .part2{
+.container .part1 .left{
+    position:relative;
+    width: 100%;
+}
 
+.container .part1 .left .head h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    left:15%;
+    top:8%;
+}
+
+
+.container .part1 .left .head h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    left:15%;
+    top:15%;
+}
+
+
+.container .part1 .left .head img{    
+    position: absolute;
+    left:15%;
+    top:40%;
+    width: 60%;
+}
+
+.container .part1 .right{
+    position:relative;
+    width: 100%;
+}
+
+
+.container .part1 .right .head img{    
+    position: absolute;
+    right:15%;
+    top:5%;
+    width: 60%;
+}
+
+
+.container .part1 .right .head p{    
+    font-size:1.2rem;
+    width: 450px;
+    position: absolute;
+    right:20%;
+    bottom:15%;
+}
+
+.container .part1 .right .head button{    
+    font-size:1.2rem;
+    width: 450px;
+    position: absolute;
+    right:20%;
+    bottom:8%;
+}
+
+
+.container .part2 .numberContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .part2  .numberContainer .styleBox{
+    background-color:#fff6ee;
+    width: 90%;
+    height: 150px;
+    width: 100%;
+}
+
+.container .part2 .why{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin:5% auto;    
+} 
+
+.container .part2 .why h1{    
+    margin:3% auto;    
+}
+
+
+
+.container .part2 .services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+
+.container .part2 .mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5% auto;
+}
+
+
+.container .part2 .mission h1{
+    margin: 3% auto;
 }
 
