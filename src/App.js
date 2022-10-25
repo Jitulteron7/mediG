@@ -1,14 +1,14 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
-import Navbar from "./components/NavBar"
+import Dashboard from './pages/dashboard';
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <>      
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/dash/*" element={<Dashboard />} />
       </Routes>
     </>
   );

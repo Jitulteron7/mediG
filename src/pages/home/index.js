@@ -8,11 +8,13 @@ import Mission from "../../components/Mission"
 import img1 from "../../assets/13.svg";
 import img2 from "../../assets/13.svg";
 import Footer from "../../components/Footer";
+import Navbar from "../../components/NavBar";
 
 const Home = () => {
 
     return (
         <>
+            <Navbar />
             <div className={classes.container}>
                 <div className={classes.part1}>
                     <div className={classes.left}>
