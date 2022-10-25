@@ -1,13 +1,19 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import AllPatients from "./pages/AllPatients";
+import PatientAnalytics from "./pages/PatientAnalytics";
+import Meets from "./pages/Meets";
+import Meet from "./pages/Meet";
+import Schedular from "./pages/Schedular";
 
 const Docter = () => {
     return (<div>
         <Routes>
-            <Route path="/" element={<h2>Main</h2>} />
-            <Route path="/:id" element={<h2>Main</h2>} />
-            <Route path="/schedular/:id" element={<h2>create_docter</h2>} />                                          
-            <Route path="/create_docter" element={<h2>create_docter</h2>} />                                          
+            <Route path="/" element={<AllPatients />} />
+            <Route path="/:id" element={<PatientAnalytics />} />
+            <Route path="/schedular/:id" element={<Schedular />} />
+            <Route path="/meets" element={<Meets />} />
+            <Route path="/meets/:id" element={<Meet/>} />
         </Routes>
     </div>)
 }

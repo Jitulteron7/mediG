@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Main from "./pages/Main";
+import Main from "./pages/AllPatients";
 import Analytics from "./pages/PatientAnalytics";
 
 const Hospital = () => {
