@@ -1,0 +1,10 @@
+.container_big{
+    border-radius:30px;
+    border-width: 0;
+    padding: 1% 2%;    
+    width: 200px;
+    font-size: 1.2rem;  
+    background-color: #ff5714;  
+    color: #fff;
+    font-weight: bold;
+}

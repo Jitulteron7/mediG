@@ -1,17 +1,18 @@
-import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-const Navbar = React.lazy(() => import("./components/Navbar/Navbar"));
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import Navbar from "./components/Navbar/index"
+import InputField from './components/inputField/inputfield';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-      <switch>
-      <Route exact path="/navbar" component={Navbar} />
-      </switch>
-      </Router>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/input' element={<InputField/>}/>
+      </Routes>
+    </>
   );
 }
 
