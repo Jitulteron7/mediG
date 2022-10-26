@@ -9,7 +9,7 @@
 .container h2{
     font-weight: bold;
     font-size:2rem;
-    margin: 3% 0;
+    margin: 1% 0;
 }
 
 .container .details{
@@ -30,8 +30,17 @@
     justify-content:center;
     align-items: center;
 }
+
+
+.container .patient{
+    background-color:#ffbe81;
+    padding: 1%;
+
+
+}
 .container .analytics{
     height:100%;
-    width:800px;
+    width:900px;
+    margin:1%;   
     
 }

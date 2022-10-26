@@ -1,5 +1,8 @@
 import React from "react";
 import classes from "./meet.module.css";
+import TableDiv from "../../../../../../components/Table";
+import FormSchedule from "./Form";
+
 
 const Schedular = () => {
 
@@ -10,8 +13,13 @@ const Schedular = () => {
                 {false ? <div>
                     table
                 </div> :
-                    <div className={classes.upload}>
-                        <input type="file" />
+                    <div className={classes.container}>
+                        <div className={classes.table}>
+                            <TableDiv />
+                        </div>
+                        <div className={classes.form}>
+                            <FormSchedule />
+                        </div>
                     </div>
                 }
             </div>
