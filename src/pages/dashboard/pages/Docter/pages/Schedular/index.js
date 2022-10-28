@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./meet.module.css";
-import TableDiv from "../../../../../../components/Table";
+import TableDiv from "../../../../../../components/Tables/Table";
 import FormSchedule from "./Form";
 
 

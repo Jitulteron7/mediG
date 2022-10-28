@@ -1,5 +1,5 @@
 import React from "react";
-import TableDiv from "../../../../../../components/Table";
+import TableDiv from "../../../../../../components/Tables/Table";
 import classes from "./all_patients.module.css";
 
 const AllPatients = () => {

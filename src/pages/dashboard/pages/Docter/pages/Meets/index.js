@@ -1,5 +1,5 @@
 import React from "react";
-import TableDiv from "../../../../../../components/Table";
+import TableDiv from "../../../../../../components/Tables/Table";
 import classes from "./meets.module.css";
 
 const Meets = () => {
