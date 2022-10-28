@@ -1,11 +1,11 @@
-import { authConstant } from "../const";
+import { authConstant, scheduleConstant } from "../const";
 
 const initialState = {
     token: null,
+    schedules:[],
     user: {
-        name: "",
-        email: "",
-        profileImage: "",
+        type: "",
+        data: null
     },
     authenticated: false,
     authenticating: false,
@@ -13,142 +13,32 @@ const initialState = {
     forgotReq: false,
     resetPassword: false,
 };
+
+
 export default (state = initialState, action) => {
     switch (action.type) {
-        case authConstant.LOGIN_REQUEST:
+        case scheduleConstant.SCHEDULE_REQUEST:
             state = {
                 ...state,
-                authenticating: true,
+                loading: true
             };
             break;
 
-        case authConstant.LOGIN_SUCCESS:
+        case scheduleConstant.SCHEDULE_SUCCESS:
             state = {
                 ...state,
-                user: action.payload.user,
-                token: action.payload.token,
-                authenticated: true,
-                authenticating: false,
+                loading: false,
+                schedules: action.payload.schedules,
             };
             break;
-        case "UPDATE_USER":
-            console.log(action.payload.user, "user:action.payload.user");
+        case scheduleConstant.SCHEDULE_FAIL:
             state = {
                 ...state,
-                user: action.payload.user,
-            };
-            break;
-        case authConstant.LOGIN_FAIL:
-            state = {
-                ...state,
-                authenticated: false,
-                authenticating: false,
+                loading: false,
+                schedules: initialState.schedules,
             };
             break;
 
-        case authConstant.LOGOUT_SUCCESS:
-            state = {
-                ...initialState,
-            };
-            break;
-        case authConstant.LOGOUT_FAIL:
-            state = {
-                ...state,
-                error: action.payload.error,
-                loading: false,
-            };
-            break;
-
-        case authConstant.LOGOUT_REQUEST:
-            state = {
-                ...state,
-                loading: true,
-            };
-            break;
-
-        case authConstant.REGISTER_REQUEST:
-            state = {
-                ...state,
-                loading: true,
-            };
-            break;
-        case authConstant.REGISTER_SUCCESS:
-            state = {
-                ...state,
-                loading: false,
-            };
-
-            break;
-        case authConstant.REGISTER_FAIL:
-            state = {
-                ...state,
-                loading: false,
-                error: action.payload.error,
-            };
-            break;
-
-        case authConstant.FORGOT_PASSWORD_REQUEST:
-            state = {
-                ...state,
-                loading: true,
-            };
-            break;
-        case authConstant.FORGOT_PASSWORD_SUCCESS:
-            state = {
-                ...state,
-                forgotReq: true,
-                loading: false,
-            };
-            break;
-        case authConstant.FORGOT_PASSWORD_FAIL:
-            state = {
-                ...state,
-                loading: false,
-                error: action.payload.error,
-            };
-            break;
-
-        case authConstant.RESET_PASSWORD_REQUEST:
-            state = {
-                ...state,
-                loading: true,
-            };
-            break;
-        case authConstant.RESET_PASSWORD_SUCCESS:
-            state = {
-                ...state,
-                loading: false,
-                resetPassword: true,
-            };
-            break;
-        case authConstant.RESET_PASSWORD_FAIL:
-            state = {
-                ...state,
-                loading: false,
-                error: action.payload.error,
-            };
-            break;
-        //   update profile
-
-        case "uploading":
-            state = {
-                ...state,
-                loading: true,
-            };
-            break;
-        case "uploading_success":
-            state = {
-                ...state,
-                loading: false,
-                user: action.payload.user,
-            };
-            break;
-        case "uploading_fail":
-            state = {
-                ...state,
-                loading: false,
-            };
-            break;
     }
 
     return state;
