@@ -5,14 +5,16 @@ import NumberContainer from "../../components/NumberContainer";
 import TabComponent from "../../components/TabComponent";
 import Services from "../../components/Services";
 import Mission from "../../components/Mission"
-import img1 from "../../assets/13.svg";
+import img1 from "../../assets/4.png";
 import img2 from "../../assets/13.svg";
 import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar/index";
 
 const Home = () => {
 
     return (
         <>
+            <Navbar />
             <div className={classes.container}>
                 <div className={classes.part1}>
                     <div className={classes.left}>
@@ -39,9 +41,9 @@ const Home = () => {
                 </div>
                 <div className={classes.part2}>
                     <div className={classes.numberContainer}>
-                        <NumberContainer />
+                       <div style={{backgroundColor:'#fff6ee',marginTop:'-10px', width:'50%'}}>  <NumberContainer /></div>
                         <div className={classes.styleBox}>
-
+                            
                         </div>
                     </div>
                     <div className={classes.why}>

@@ -16,12 +16,18 @@
     justify-content: space-evenly;
     align-items: center;  
     width: 30%;
+    color: #fff !important;
 }
 
 .menu a {
-    
+        text-decoration: none !important;
+        color: rgb(95, 92, 92) !important;
+        font-weight: 600;
 }
-
+.menu  a:hover 
+{
+  color: orange !important;
+}
 .nav_container .function .getstart{
     background-color:orange;
     color: #fff;
@@ -29,7 +35,6 @@
     padding: 3% 6%;
     border-radius: 50px;
 }
-
 
 .function{
     display: flex;

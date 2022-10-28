@@ -1,0 +1,9 @@
+.container{
+    display: flex;    
+}
+
+.outlet_container{
+    width: 100%;
+    display: flex;
+        
+}
