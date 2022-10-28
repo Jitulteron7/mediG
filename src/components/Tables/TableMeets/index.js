@@ -8,16 +8,13 @@ function TableDiv() {
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Desiase</th>
-                    <th>Healt Status</th>
-                    <th>Phone no.</th>
+                    <th>DR. Name</th>
+                    <th>Patient Name</th>
+                    <th>Request Type</th>
+                    <th>Phone No. of Patients</th>
+                    <th>Phone No. Doctor</th>
                     <th>Address</th>
-                    <th>Admitted</th>
-                    <th>Released</th>
-                    <th>Docter assigned</th>
-                    <th>Check condition</th>
+                    <th>Patient Report</th>
                 </tr>
             </thead>
             <tbody>
@@ -29,10 +26,9 @@ function TableDiv() {
                     <td>color green</td>
                     <td>99999999</td>
                     <td>@mdo</td>
-                    <td>1/2/22</td>
-                    <td>2/2/22</td>
-                    <td>Dr Test</td>
                     <td><button> Check </button></td>
+
+
                 </tr>
                 <tr>
                     <td>2</td>
@@ -42,10 +38,8 @@ function TableDiv() {
                     <td>color green</td>
                     <td>99999999</td>
                     <td>@mdo</td>
-                    <td>1/2/22</td>
-                    <td>2/2/22</td>
-                    <td>Dr Test</td>
                     <td><button onClick={() => { navigation("/dash/hospital/123") }}> Check </button></td>
+
                 </tr>
                 <tr>
                     <td>3</td>
@@ -55,9 +49,6 @@ function TableDiv() {
                     <td>color green</td>
                     <td>99999999</td>
                     <td>@mdo</td>
-                    <td>1/2/22</td>
-                    <td>2/2/22</td>
-                    <td>Dr Test</td>
                     <td><button> Check </button></td>
                 </tr>
             </tbody>

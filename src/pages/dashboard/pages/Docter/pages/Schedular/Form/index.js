@@ -5,8 +5,6 @@ import classes from "./form.module.css";
 const ScheduleForm = () => {
     return (
         <div className={classes.container}>
-
-
             <div className={classes.input_container}>
                 <div className={classes.input}>
                     <Input type={"checkbox"} placeholder={"Schedule"} name={"Repeat"} />
@@ -21,6 +19,9 @@ const ScheduleForm = () => {
                     <Input type={"desc"} placeholder={""} name={"Instruction"} height={"200px"} />
                 </div>
                 <div className={classes.input}>
+                    <Input type={"text"} placeholder={"Link"} name={"Link"} />
+                </div>
+                <div className={classes.input}>
                     <Input type={"time"} placeholder={"Time"} name={"Time"} />
                 </div>
                 <div className={classes.input}>
@@ -29,7 +30,9 @@ const ScheduleForm = () => {
                 <div className={classes.input}>
                     <Input type={"date"} placeholder={"To"} name={"To"} />
                 </div>
-
+                <div className={classes.input}>
+                    <Input type={"text"} placeholder={"Google Link"} name={"Google Link"} />
+                </div>
                 <div className={classes.input}>
                     <Button>Submit</Button>
                 </div>

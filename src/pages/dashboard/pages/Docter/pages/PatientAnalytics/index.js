@@ -1,5 +1,4 @@
 import React from "react";
-import TableDiv from "../../../../../../components/Table";
 import classes from "./analytics.module.css";
 
 const PatientAnalytics = () => {
@@ -31,10 +30,10 @@ const PatientAnalytics = () => {
                 </div>
             </div>
             <div className={classes.prescription}>
-            <h2>Patients Prescrition</h2>
+                <h2>Patients Prescrition</h2>
                 <iframe src=
                     "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
-                    frameborder={0} style={{ border: 0, width: "100%", height: "90vh" }} allowfullscreen 
+                    frameborder={0} style={{ border: 0, width: "100%", height: "90vh" }} allowfullscreen
 
                 />
             </div>
