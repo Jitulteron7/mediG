@@ -1,8 +1,9 @@
 import Table from 'react-bootstrap/Table';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 function TableDiv() {
 
     const navigation = useNavigate();
+    const state = useLocation();
     return (
         <Table striped bordered hover>
             <thead>
@@ -32,7 +33,7 @@ function TableDiv() {
                     <td>1/2/22</td>
                     <td>2/2/22</td>
                     <td>Dr Test</td>
-                    <td><button> Check </button></td>
+                    <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/123`) }}> Check </button></td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -45,7 +46,7 @@ function TableDiv() {
                     <td>1/2/22</td>
                     <td>2/2/22</td>
                     <td>Dr Test</td>
-                    <td><button onClick={() => { navigation("/dash/hospital/123") }}> Check </button></td>
+                    <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/123`) }}> Check </button></td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -58,7 +59,7 @@ function TableDiv() {
                     <td>1/2/22</td>
                     <td>2/2/22</td>
                     <td>Dr Test</td>
-                    <td><button> Check </button></td>
+                    <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/123`) }}> Check </button></td>
                 </tr>
             </tbody>
         </Table>

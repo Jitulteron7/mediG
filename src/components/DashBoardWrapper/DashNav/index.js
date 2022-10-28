@@ -15,9 +15,11 @@ const DashNav = () => {
                 </div>
             </div> */}
             <div className={classes.sidebar}>
-                <div className={classes.logo}>
-                    <h1>Logo</h1>
-                </div>
+                <Link to="/">
+                    <div className={classes.logo}>
+                        <h1>MEDIG</h1>
+                    </div>
+                </Link>
                 <div className={classes.ul_container}>
                     <Link>Main</Link>
                     <Link>Anylasis</Link>
