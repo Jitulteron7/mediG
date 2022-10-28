@@ -1,0 +1,10 @@
+
+
+.tab_change_custom_style button{
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.tab_change_custom_style .active{
+        color: orange !important;
+}

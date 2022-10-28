@@ -1,10 +1,16 @@
 import React from "react";
 import "./secondpage.css";
+//import DetailsSec from "./CommonPage/secondPage";
 
+import CumDetails from "../CumDetails";
+import CumMedicine from "../cumMedecine";
+import Calender from "../calender";
+import { Route, Routes } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
 const DetailsSec=()=>{
     return(
+        <>
     <div className="SecondPage">
         <div className="precription_validation">
               <div>
@@ -22,25 +28,24 @@ const DetailsSec=()=>{
         <nav className="sections">
            
             <div>
-                <Link to='/customer/prescriptionDetails/medicine' >
-                    Medicine
+                <Link style={{textDecoration:"none", color:"white"}} to='/secondPage/customer/prescriptionDetails/details' >
+                   Details 
                 </Link>
             </div>
-    
             <div>
-                <Link to='/customer/prescriptionDetails'>
-                    Details
-                </Link>
-            </div>
-
-            <div>
-                <Link to='/customer/prescriptionDetails/calender'>
+                <Link style={{textDecoration:"none", color:"white"}} to='/secondPage/customer/prescriptionDetails/calender'>
                     Reminder
                 </Link>
             </div>
-
+            <div>
+                <Link  style={{textDecoration:"none", color:"white"}} to='/secondPage/customer/prescriptionDetails/tools'>
+                    Tools
+                </Link>
+            </div>
         </nav>
     </div>
+   
+    </>
     )
 }
 

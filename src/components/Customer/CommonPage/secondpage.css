@@ -74,7 +74,7 @@
  .SecondPage .sections div{
      width: 95px;
      height: 27px;    
-     background: #0F92BB;
+     background: rgb(15, 207, 207);
      border-radius: 12px;
      font-style: normal;
      font-weight: bold;

@@ -1,29 +1,33 @@
-import React from 'react'
+import React from "react";
 
-import DetailsSec from './CommonPage/secondPage';
+import DetailsSec from "./CommonPage/secondPage";
 
-import CumDetails from './CumDetails';
-import CumMedicine from './cumMedecine';
-import Calender from './calender';
-
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import CumDetails from "./CumDetails";
+import Tools from "./Tools";
+import Calender from "./calender";
+import { Route, Routes } from "react-router-dom";
 
 const CustomerRouter = () => {
-    return (
-        <div>
-            <Router>
-               <DetailsSec />
-               <Switch> 
-                    <Route exact path='/customer/prescriptionDetails' component={CumDetails}/>
+  return (
+    <div>
+      <DetailsSec />
+      {/* <CumDetails /> */}
 
-                    <Route path='/customer/prescriptionDetails/medicine' component={CumMedicine}/>
+      <Routes>
+        <Route eaxct path="customer/prescriptionDetails/details" element={<CumDetails />} />
 
-                    <Route path='/customer/prescriptionDetails/calender' component={Calender}/>
-               </Switch>
-           </Router>
+        <Route
+          path="customer/prescriptionDetails/tools"
+          element={<Tools/>}
+        />
 
-        </div>
-    )
-}
+        <Route
+          path="customer/prescriptionDetails/calender"
+          element={<Calender />}
+        />
+      </Routes>
+    </div>
+  );
+};
 
-export default CustomerRouter
+export default CustomerRouter;
