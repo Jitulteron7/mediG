@@ -26,7 +26,7 @@ const ScheduleForm = (props) => {
             [event.target.name]: event.target.value
         });
     };
-    
+
     return (
         <div className={classes.container}>
             <div className={classes.input_container}>

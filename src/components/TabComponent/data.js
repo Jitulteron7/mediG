@@ -26,7 +26,7 @@ export const data = [
         totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
         quasi aliquam eligendi, placeat qui corporis!
         `,
-        image: "https://static.remove.bg/remove-bg-web/c05ac62d076574fad1fbc81404cd6083e9a4152b/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg"
+        image: "https://lottiefiles.com/91338-medical-app"
     },
     {
         eventKey: "home2",
