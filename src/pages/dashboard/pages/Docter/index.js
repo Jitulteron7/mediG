@@ -12,7 +12,7 @@ const Docter = () => {
             <Route path="/" element={<AllPatients />} />
             <Route path="/:id" element={<PatientAnalytics />} />
             <Route path="/schedular/:id" element={<Schedular />} />
-            <Route path="/meets" element={<Meets />} />
+            <Route path="/meets" element={<Schedular />} />
             <Route path="/meets/:id" element={<Meet/>} />
         </Routes>
     </div>)

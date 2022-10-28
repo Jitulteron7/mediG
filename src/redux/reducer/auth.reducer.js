@@ -1,4 +1,4 @@
-import { authConstant, crossState } from "../actions/constants";
+import { authConstant } from "../const";
 
 const initialState = {
     token: null,

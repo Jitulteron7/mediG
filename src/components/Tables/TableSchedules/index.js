@@ -1,5 +1,5 @@
 import Table from 'react-bootstrap/Table';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 function TableDiv() {
 
     const navigation = useNavigate();
@@ -8,56 +8,52 @@ function TableDiv() {
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Desiase</th>
-                    <th>Healt Status</th>
-                    <th>Phone no.</th>
-                    <th>Address</th>
-                    <th>Admitted</th>
-                    <th>Released</th>
-                    <th>Docter assigned</th>
-                    <th>Check condition</th>
+                    <th>Type</th>
+                    <th>Schedule Name</th>
+                    <th>Description</th>
+                    <th>Instruction</th>
+                    <th>Link If any</th>
+                    <th>Time</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Meet Link</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Fever</td>
-                    <td>color green</td>
-                    <td>99999999</td>
-                    <td>@mdo</td>
+                    <td>Repeat</td>
+                    <td>Mark Otto Otto</td>
+                    <td>color green color green</td>
+                    <td>color green color green color green color green</td>
+                    <td><a to="https://www.youtube.com/watch?v=A_BTlYvIWro" target={"_blank"}>https://www.youtube.com/watch?v=A_BTlYvIWro</a></td>
                     <td>1/2/22</td>
                     <td>2/2/22</td>
-                    <td>Dr Test</td>
+                    <td>Dr @mdo</td>
                     <td><button> Check </button></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Fever</td>
-                    <td>color green</td>
-                    <td>99999999</td>
-                    <td>@mdo</td>
+                    <td>Repeat</td>
+                    <td>Mark Otto Otto</td>
+                    <td>color green color green</td>
+                    <td>color green color green color green color green</td>
+                    <td><a to="https://www.youtube.com/watch?v=A_BTlYvIWro" target={"_blank"}>https://www.youtube.com/watch?v=A_BTlYvIWro</a></td>
                     <td>1/2/22</td>
                     <td>2/2/22</td>
-                    <td>Dr Test</td>
-                    <td><button onClick={() => { navigation("/dash/hospital/123") }}> Check </button></td>
+                    <td>Dr @mdo</td>
+                    <td><button> Check </button></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Fever</td>
-                    <td>color green</td>
-                    <td>99999999</td>
-                    <td>@mdo</td>
+                    <td>Repeat</td>
+                    <td>Mark Otto Otto</td>
+                    <td>color green color green</td>
+                    <td>color green color green color green color green</td>
+                    <td><a to="https://www.youtube.com/watch?v=A_BTlYvIWro" target={"_blank"}>https://www.youtube.com/watch?v=A_BTlYvIWro</a></td>
                     <td>1/2/22</td>
                     <td>2/2/22</td>
-                    <td>Dr Test</td>
+                    <td>Dr @mdo</td>
                     <td><button> Check </button></td>
                 </tr>
             </tbody>
