@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./input.module.css";
 import { Form, InputGroup } from "react-bootstrap";
 const Input = (props) => {
-    const { type, placeholder, name, width, height } = props;
+    const { type, placeholder, name, width, height, handleChange } = props;
     return (
         <>
             {
@@ -12,13 +12,18 @@ const Input = (props) => {
                             type="switch"
                             id="custom-switch"
                             label={name}
+                            onChange={handleChange}
+                            name={name}
                         />
                     </> :
 
                     type === "desc" ?
                         <div className={classes.container}>
                             <Form.Label>{name}</Form.Label>
-                            <Form.Control as="textarea" rows={5} />
+                            <Form.Control
+                             onChange={handleChange}
+                             name={name}
+                             as="textarea" rows={5} />
                         </div>
                         :
                         <div className={classes.container}>
@@ -27,6 +32,8 @@ const Input = (props) => {
                                 type={type}
                                 style={{ width: width, height: height }}
                                 id="inputPassword5"
+                                onChange={handleChange}
+                                name={name}
                                 aria-describedby={"passwordHelpBlock"}
                                 placeholder={placeholder}
                             />
