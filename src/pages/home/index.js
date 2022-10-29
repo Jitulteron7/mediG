@@ -41,7 +41,7 @@ const Home = () => {
                 </div>
                 <div className={classes.part2}>
                     <div className={classes.numberContainer}>
-                       <div style={{backgroundColor:'#fff6ee',marginTop:'-10px', width:'50%'}}>  <NumberContainer /></div>
+                       <div style={{backgroundColor:'#fff6ee',marginTop:'10px', width:'50%'}}>  <NumberContainer /></div>
                         <div className={classes.styleBox}>
                             
                         </div>

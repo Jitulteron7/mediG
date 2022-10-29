@@ -26,7 +26,7 @@ export const data = [
         totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
         quasi aliquam eligendi, placeat qui corporis!
         `,
-        image: "https://lottiefiles.com/91338-medical-app"
+        image: "https://res.cloudinary.com/dl8hsgfaq/image/upload/c_scale,w_439/v1666982977/Medig/anime_1_hnatxk.gif"
     },
     {
         eventKey: "home2",
@@ -55,7 +55,7 @@ export const data = [
         totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
         quasi aliquam eligendi, placeat qui corporis!
         `,
-        image: "https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg"
+        image: "https://res.cloudinary.com/dl8hsgfaq/image/upload/c_scale,w_400/v1666983166/Medig/53911-online-medical-assistance-animation_drgrai.gif"
     },
     {
         eventKey: "home3",
@@ -84,7 +84,7 @@ export const data = [
         totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
         quasi aliquam eligendi, placeat qui corporis!
         `,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-KRT-IMW0v8OoGY0v3M_otURwf3kMm7_RY6NPLGvOfz_kd-5Rdf4LPQaiF22GmJJKu0&usqp=CAU"
+        image: "https://res.cloudinary.com/dl8hsgfaq/image/upload/c_scale,w_423/v1666983547/Medig/108385-medical-app_ybp2d1.gif"
     },
     {
         eventKey: "home4",
@@ -113,7 +113,7 @@ export const data = [
         totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
         quasi aliquam eligendi, placeat qui corporis!
         `,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-KRT-IMW0v8OoGY0v3M_otURwf3kMm7_RY6NPLGvOfz_kd-5Rdf4LPQaiF22GmJJKu0&usqp=CAU"
+        image: "https://res.cloudinary.com/dl8hsgfaq/image/upload/c_scale,w_430/v1666983653/Medig/114221-medical-info_t3yfw8.gif"
     }
 
 ]

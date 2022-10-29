@@ -12,17 +12,22 @@ const datas = [
         {
                 img: img1,
                 header: "Greate Service",
-                text: "Download from our catalogue of 12487 acapellas, vocal samples & spoken word and start creating music today. We have male vocals, female acapellas, full songs or vocal hooks in a variety of tempos, genres and keys."
+                text:"i need a doctor , i need a nurse"
         },
         {
                 img: img2,
                 header: "Greate Service",
-                text: "Download from our catalogue of 12487 acapellas, vocal samples & spoken word and start creating music today. We have male vocals, female acapellas, full songs or vocal hooks in a variety of tempos, genres and keys."
+                text:"i need a doctor , i need a nurse"
         },
         {
                 img: img3,
                 header: "Greate Service",
-                text: "Download from our catalogue of 12487 acapellas, vocal samples & spoken word and start creating music today. We have male vocals, female acapellas, full songs or vocal hooks in a variety of tempos, genres and keys."
+                text:"i need a doctor , i need a nurse"
+        },
+        {
+                img: img4,
+                header: "Greate Service",
+                text:"i need a doctor , i need a nurse"
         }
 ]
 const Services = () => {
@@ -30,6 +35,7 @@ const Services = () => {
                 <div className={classes.container}>
                         {datas.map((info, key) => {
                                 return (<Box
+                                        className={classes.boxes}
                                         img={info.img}
                                         text={info.text}
                                         header={info.header}
