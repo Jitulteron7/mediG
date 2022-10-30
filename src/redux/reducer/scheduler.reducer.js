@@ -1,8 +1,8 @@
-import { authConstant, scheduleConstant } from "../const";
+import {scheduleConstant } from "../const";
 
 const initialState = {
     token: null,
-    schedules: [],
+    schedules:[],
     user: {
         type: "",
         data: null
@@ -16,8 +16,6 @@ const initialState = {
 
 
 export default (state = initialState, action) => {
-    //schedule request
-
     switch (action.type) {
         case scheduleConstant.SCHEDULE_REQUEST:
             state = {
@@ -27,7 +25,6 @@ export default (state = initialState, action) => {
             break;
 
         case scheduleConstant.SCHEDULE_SUCCESS:
-            console.log("SCHEDULE_SUCCESS")
             state = {
                 ...state,
                 loading: false,

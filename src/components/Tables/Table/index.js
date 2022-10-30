@@ -11,7 +11,7 @@ function TableDiv() {
                     <th>#</th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>Desiase</th>
+                    <th>Disease</th>
                     <th>Healt Status</th>
                     <th>Phone no.</th>
                     <th>Address</th>
@@ -26,21 +26,21 @@ function TableDiv() {
                 <tr>
                     <td>1</td>
                     <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Fever</td>
+                    <td>henry</td>
+                    <td>Heart Attack</td>
                     <td>color green</td>
-                    <td>99999999</td>
-                    <td>@mdo</td>
+                    <td>982299927</td>
+                    <td>california, white house</td>
                     <td>1/2/22</td>
                     <td>2/2/22</td>
-                    <td>Dr Test</td>
+                    <td>Dr Mask</td>
                     <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/123`) }}> Check </button></td>
                     <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/schedular/123`) }}> Check </button></td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
+                    <td>Rocky</td>
+                    <td>John</td>
                     <td>Fever</td>
                     <td>color green</td>
                     <td>99999999</td>
@@ -53,8 +53,8 @@ function TableDiv() {
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
+                    <td>Chef</td>
+                    <td>Bezoz</td>
                     <td>Fever</td>
                     <td>color green</td>
                     <td>99999999</td>

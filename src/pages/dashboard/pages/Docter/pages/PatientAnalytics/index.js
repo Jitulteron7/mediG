@@ -38,7 +38,7 @@ const PatientAnalytics = () => {
                     </div>
                 </div>
                 <div className={classes.analytics}>
-                    <iframe src={"https://datastudio.google.com/embed/reporting/8dc4ec31-1b51-49a3-b253-40d3c9749f9e/page/ebF5C"} frameborder={0} style={{ border: 0, width: "100%", height: "100%" }} allowfullscreen />
+                    <iframe src={"https://datastudio.google.com/embed/reporting/0fdcb92d-7d2c-4de9-bc28-4e0aba207692/page/ebF5C"} frameborder={0} style={{ border: 0, width: "100%", height: "100%" }} allowfullscreen />
                 </div>
             </div>
             <div className={classes.prescription}>

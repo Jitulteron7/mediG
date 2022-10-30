@@ -10,6 +10,7 @@ const ScheduleForm = (props) => {
     const dispatch = useDispatch();
 
     const [schedule_input, setSchedule_input] = useState({
+        repeat: false,
         schedule_name: "",
         description: "",
         instruction: "",
@@ -20,18 +21,46 @@ const ScheduleForm = (props) => {
         google_link: ""
     });
     const handleChange = (event) => {
-        console.log(event.target.value)
-        setSchedule_input({
-            ...schedule_input,
-            [event.target.name]: event.target.value
-        });
+        console.log(schedule_input.repeat)
+        
+        if (event.target.name === "repeat") {
+            let val;
+            if(schedule_input.repeat===false){
+                val=true;
+            }else {
+                val=false;
+            }
+            
+            setSchedule_input({
+                ...schedule_input,
+                [event.target.name]: val
+            });
+        } else {
+            setSchedule_input({
+                ...schedule_input,
+                [event.target.name]: event.target.value
+            });
+        }
+
     };
 
+    let links =[
+        'https://meet.google.com/osv-puie-wzc',
+        'https://meet.google.com/uir-rpht-uxi',
+        'https://meet.google.com/ihg-etdi-gsm',
+        'https://meet.google.com/yda-pkje-sqh'
+    ]
+    const  genLink = ()=>{        
+        setSchedule_input({
+            ...schedule_input,
+            google_link: links[Math.floor(Math.random()*links.length)]
+        });
+    }
     return (
         <div className={classes.container}>
             <div className={classes.input_container}>
                 <div className={classes.input}>
-                    {/* <Input onActive={} type={"checkbox"} placeholder={"Schedule"} name={"Repeat"} /> */}
+                    <Input handleChange={handleChange} type={"checkbox"} placeholder={"Schedule"} name={"repeat"} />
                 </div>
                 <div className={classes.input}>
                     <Input value={schedule_input.schedule_name} handleChange={handleChange} type={"text"} placeholder={"Schedule Name"} name={"schedule_name"} />
@@ -56,6 +85,9 @@ const ScheduleForm = (props) => {
                 </div>
                 <div className={classes.input}>
                     <Input value={schedule_input.google_link} handleChange={handleChange} type={"text"} placeholder={"Google Link"} name={"google_link"} />
+                    <Button onClick={()=>{
+                        genLink();
+                    }} >Generate Link</Button>
                 </div>
                 <div className={classes.input}>
                     <Button onClick={(e) => {
