@@ -1,4 +1,3 @@
-
 import {Link} from "react-router-dom";
 import classes from "./navbar.module.css";
 
@@ -19,7 +18,9 @@ function BrandExample() {
           </div>
 
           <div className={classes.function}>
-            <Link style={{color:'rgb(95, 92, 92)', fontWeight: '600'}} to={"/"}>Login</Link> 
+            <Link style={{color:'rgb(95, 92, 92)', fontWeight: '600'}} to={"/login"}>
+                 Login
+             </Link> 
             <Link className={classes.getstart}>Get started</Link>
           </div>
         </div>
