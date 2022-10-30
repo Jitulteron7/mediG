@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import InputField from './components/inputField/inputfield';
 import Customer from './components/Customer/customerRouter';
 import Dashboard from './pages/dashboard'
+import Login from "./pages/login/indivisual_login";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -40,6 +41,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/input' element={<InputField />} />
         <Route path="/dash/*" element={<Dashboard />} />
+        <Route path='/secondPage/*' element={<Customer/>} />
+        <Route path='/login' element={<Login/>} />
         <Route path='/secondPage/*' element={<Customer />} />
       </Routes>
     </>
