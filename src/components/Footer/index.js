@@ -4,6 +4,10 @@ import classes from "./footer.module.css";
 import MyButtom from "../MyButton";
 import img from "../../assets/3.png";
 import { InputGroup } from "react-bootstrap";
+import { BsFacebook } from 'react-icons/bs';
+import { BsTwitter } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
+import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -39,11 +43,11 @@ const Footer = () => {
           </div>
           <div className={classes.form}>
             <div className={classes.Input}>
-              <input placeholder="enter your name" />
-              <input placeholder="enter your email" />
-              <input placeholder="enter phone number" />
+              <input placeholder=" your name" />
+              <input placeholder=" your email" />
+              <input placeholder=" phone number" />
             </div>
-            <textarea placeholder="enter address"></textarea>
+            <textarea placeholder=" address"></textarea>
             <button>Submit</button>
           </div>
         </div>
@@ -56,16 +60,16 @@ const Footer = () => {
           <div className={classes.socials}>
             <ul>
               <Link>
-                <li> Instagram</li>
+                <li> <BsFacebook /></li>
               </Link>
               <Link>
-                <li> Linkedin</li>
+                <li> <FaInstagram /></li>
               </Link>
               <Link>
-                <li>Twitter</li>
+                <li><BsTwitter /></li>
               </Link>
               <Link>
-                <li>Facebook</li>
+                <li><BsLinkedin /></li>
               </Link>
             </ul>
           </div>
