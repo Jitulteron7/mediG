@@ -90,8 +90,10 @@
     width:230px;
     border-radius: 7px;
     border: 2px rgb(8, 153, 221);
-    background-color: rgb(58, 53, 53);
-    color:white;
+    background-color: #f2a575;
+    color:rgb(158, 156, 156);
+    outline:none;
+    border:none
 }
 .container .upper .form textarea
 {
@@ -99,8 +101,10 @@
     height:160px;
     border-radius: 7px;
     margin:10px auto;
-    background-color: rgb(58, 53, 53);
-    color:white
+    background-color: #f2a575;
+    color:white;
+    outline:none;
+    border:none
 }
 ::placeholder
 {
@@ -112,13 +116,14 @@
 {
     width:90%;
     height:50px;
+    background-color:orange;
     text-align: center;
     margin:20px auto;
     border-radius:7px;
     font-size: 1.2rem;
 }
 .container .upper .form button:hover{
-    background-color:rgb(6, 95, 137);
+    background-color:rgb(219, 145, 6);
 }
 
 .container .down {
