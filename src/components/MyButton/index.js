@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./mybtn.module.css";
-
+import image from '../../assets/gif/anime_1.gif'
 const MyButtom = (props)=>{
     const {color,text,click} = props;
 

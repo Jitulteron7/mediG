@@ -1,0 +1,38 @@
+.head 
+{
+   color: white;
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin: auto;
+   
+}
+button
+{
+    background-color: rgb(15, 207, 207);
+    border: none;
+    padding: 10px;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+}
+button:hover{
+    background-color: rgb(7, 133, 133);
+    text-align: center;
+}
+
+.btn1
+{
+    margin-top: 7%;
+    border-radius: 15px;
+}
+.btn2
+{
+    margin-top: 7%;
+    border-radius: 15px;
+}
+.btn3
+{
+    border-radius: 10px;
+    width: 60%;
+    margin: 7% auto 7% auto;
+}

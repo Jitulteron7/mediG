@@ -9,17 +9,17 @@ export const data = [
     {
         img: img1,
         heading: "Text the mission",
-        content: "This mission is abg kdhf asda qweqw"
+        content: "This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw,This mission is abg kdhf asda qweqw"
     },
     {
         img: img2,
         heading: "Text the mission",
-        content: "This mission is abg kdhf asda qweqw"
+        content: "This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw,This mission is abg kdhf asda qweqw"
     },
     {
         img: img3,
         heading: "Text the mission",
-        content: "This mission is abg kdhf asda qweqw"
+        content: "This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw,This mission is abg kdhf asda qweqw"
     }
 ]
 

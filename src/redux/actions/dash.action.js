@@ -2,30 +2,17 @@ import { authConstant } from "../const";
 import axios from "../../helper/AxiosInstance";
 // import { Toastify } from "../../App";
 
-export const uploadFile = (file) => {
+export const uploadFile = async (file) => {
 
-    console.log("file1", file);
+        console.log("file3", file);
 
-    return async (dispatch) => {
+        let res = await axios.post("/patient/dashboard/", file );
 
-        console.log("file2", file);
-        
-        try {
- 
-           console.log("file3", file);
+        console.log(res);
 
-            let res = await axios.post("/patient/dash/", file );
-
-            console.log(res);
-
-            if (res.status == 200) {
+        if (res.status == 200) {
                 // Toastify("success", "Login successfully");
-            } else {
+        } else {
                 // Toastify("error", "Unable to Login");
-            }
-        } catch (error) {
-            // Toastify("error", error.response.data.message);
-            console.log(error)
         }
-    };
 };

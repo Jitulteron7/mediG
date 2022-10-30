@@ -19,6 +19,7 @@ function TableDiv() {
                     <th>Released</th>
                     <th>Docter assigned</th>
                     <th>Check condition</th>
+                    {state.pathname.split("/")[2] === "hospital" ? <th>Schedules</th> : <></>}
                 </tr>
             </thead>
             <tbody>
@@ -34,6 +35,7 @@ function TableDiv() {
                     <td>2/2/22</td>
                     <td>Dr Test</td>
                     <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/123`) }}> Check </button></td>
+                    <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/schedular/123`) }}> Check </button></td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -47,6 +49,7 @@ function TableDiv() {
                     <td>2/2/22</td>
                     <td>Dr Test</td>
                     <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/123`) }}> Check </button></td>
+                    <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/schedular/123`) }}> Check </button></td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -60,6 +63,7 @@ function TableDiv() {
                     <td>2/2/22</td>
                     <td>Dr Test</td>
                     <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/123`) }}> Check </button></td>
+                    <td><button onClick={() => { navigation(`/dash/${state.pathname.split("/")[2]}/schedular/123`) }}> Check </button></td>
                 </tr>
             </tbody>
         </Table>

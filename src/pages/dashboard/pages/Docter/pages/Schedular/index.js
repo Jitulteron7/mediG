@@ -3,11 +3,11 @@ import classes from "./meet.module.css";
 import TableDiv from "../../../../../../components/Tables/TableSchedules";
 import FormSchedule from "./Form";
 import { useLocation } from "react-router-dom";
-
+import {useSelector} from "react-redux"
 
 const Schedular = () => {
     const state = useLocation()
-
+    const schedules = useSelector((state) => state.schedules);
 
     return (
         <div className={classes.container}>
@@ -16,15 +16,15 @@ const Schedular = () => {
                 {state.pathname.split("/")[2] === "docter" ?
                     <div className={classes.container}>
                         <div className={classes.table}>
-                            <TableDiv />
+                            <TableDiv schedules={schedules}/>
                         </div>
                     </div> :
                     <div className={classes.container}>
                         <div className={classes.table}>
-                            <TableDiv />
+                            <TableDiv schedules={schedules}/>
                         </div>
                         <div className={classes.form}>
-                            <FormSchedule />
+                            <FormSchedule schedules={schedules}/>
                         </div>
                     </div>
                 }
