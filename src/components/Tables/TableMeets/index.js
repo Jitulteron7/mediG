@@ -20,12 +20,12 @@ function TableDiv() {
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
+                    <td>Rocky</td>
+                    <td>John</td>
                     <td>Fever</td>
                     <td>color green</td>
-                    <td>99999999</td>
-                    <td>@mdo</td>
+                    <td>9859928929</td>
+                    <td>delhi, india</td>
                     <td><button> Check </button></td>
 
 
@@ -34,21 +34,21 @@ function TableDiv() {
                     <td>2</td>
                     <td>Mark</td>
                     <td>Otto</td>
-                    <td>Fever</td>
-                    <td>color green</td>
-                    <td>99999999</td>
-                    <td>@mdo</td>
+                    <td>heart attack</td>
+                    <td>color yellow</td>
+                    <td>985990339</td>
+                    <td>mumbai , india</td>
                     <td><button onClick={() => { navigation("/dash/hospital/123") }}> Check </button></td>
 
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Fever</td>
-                    <td>color green</td>
-                    <td>99999999</td>
-                    <td>@mdo</td>
+                    <td>Elon</td>
+                    <td>Bezus</td>
+                    <td>Kidney stone</td>
+                    <td>color red</td>
+                    <td>102429303</td>
+                    <td>Kolkatta, india</td>
                     <td><button> Check </button></td>
                 </tr>
             </tbody>

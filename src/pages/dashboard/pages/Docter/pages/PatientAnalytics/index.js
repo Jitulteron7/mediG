@@ -1,14 +1,14 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import classes from "./analytics.module.css";
 import { uploadFile } from "../../../../../../redux/actions";
 
 const PatientAnalytics = () => {
 
-    const [ file, setFile ] = useState(null);
+    const [file, setFile] = useState(null);
 
-    const changeFile = (e)=>{
+    const changeFile = (e) => {
 
-        setFile( e.target.files[0] );
+        setFile(e.target.files[0]);
     }
 
     return (
@@ -21,18 +21,18 @@ const PatientAnalytics = () => {
                         <ul>
                             <li>Name : Rocky John</li>
                             <li>Gender: Male</li>
-                            <li>Age: Male</li>
-                            <li>Desiease : Abc</li>
+                            <li>Age: 52</li>
+                            <li>Disease : Fever</li>
                             <li>Dr appointed : Dr ABD aaJ</li>
-                            <li>Synmonts : KS</li>
+                            <li>Syntoms : high temparature, headache</li>
                             <li>Date of admission:20/20/222</li>
                             <li>Days:60</li>
                             <li>Condition: <span className={classes.condition}></span></li>
                         </ul>
                         <div className={classes.upload}>
-                            <input type={"file"} onChange={changeFile}/>
-                            <button onClick={()=>uploadFile(file)}>
-                                   Upload!
+                            <input type={"file"} onChange={changeFile} />
+                            <button onClick={() => uploadFile(file)}>
+                                Upload!
                             </button>
                         </div>
                     </div>
