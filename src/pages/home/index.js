@@ -8,7 +8,7 @@ import Mission from "../../components/Mission"
 import img1 from "../../assets/4.png";
 import img2 from "../../assets/13.svg";
 import Footer from "../../components/Footer";
-import Navbar from "../../components/NavBar";
+import Navbar from "../../components/Navbar";
 
 const Home = () => {
 
