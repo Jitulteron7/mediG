@@ -1,14 +1,27 @@
 import React, { useState } from "react";
 import classes from "./analytics.module.css";
-import { uploadFile } from "../../../../../../redux/actions";
+import { Circles } from "react-loader-spinner";
 
 const PatientAnalytics = () => {
 
-    const [file, setFile] = useState(null);
+    const [ file, setFile ] = useState(null);
+    const [ loading , setLoading ] = useState(false);
+    const [ state , setState ] = useState(-1);
 
     const changeFile = (e) => {
 
         setFile(e.target.files[0]);
+    }
+
+    const uploadFile = () => {
+        
+        setLoading( true );
+
+        setTimeout(() => {
+
+            setLoading( false );
+            setState( Math.floor(Math.random() * 3) );
+        }, 3000);
     }
 
     return (
@@ -27,14 +40,19 @@ const PatientAnalytics = () => {
                             <li>Syntoms : high temparature, headache</li>
                             <li>Date of admission:20/20/222</li>
                             <li>Days:60</li>
-                            <li>Condition: <span className={classes.condition}></span></li>
+                            <li>Condition: <span className={classes.condition}
+                                style = {{ "backgroundColor" : state === 0 ? "red" : state === 1 ? "green" : state === 2 ? "yellow" : "#000000" } }
+                            ></span></li>
                         </ul>
-                        <div className={classes.upload}>
-                            <input type={"file"} onChange={changeFile} />
-                            <button onClick={() => uploadFile(file)}>
-                                Upload!
-                            </button>
-                        </div>
+                        {
+                            loading ? < Circles / > :
+                            <div className={classes.upload}>
+                                <input type={"file"} onChange={changeFile}/>
+                                <button onClick={ uploadFile }>
+                                   Upload!
+                                </button>
+                            </div>
+                        }
                     </div>
                 </div>
                 <div className={classes.analytics}>
