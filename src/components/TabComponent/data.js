@@ -1,8 +1,8 @@
 export const data = [
     {
-        eventKey: "home",
-        title: "Home",
-        heading: "You will alwasy get extra security from us",
+        eventKey: "Easy to use",
+        title: "Easy to use",
+        heading: "Easy to use",
         content: `
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -29,9 +29,9 @@ export const data = [
         image: "https://res.cloudinary.com/dl8hsgfaq/image/upload/c_scale,w_439/v1666982977/Medig/anime_1_hnatxk.gif"
     },
     {
-        eventKey: "home2",
-        title: "Home2",
-        heading: " get extra security from us You will alwasy",
+        eventKey: "Efficeint Solution",
+        title: "Efficeint Solution",
+        heading: "Efficeint Solution",
         content: `
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -58,9 +58,9 @@ export const data = [
         image: "https://res.cloudinary.com/dl8hsgfaq/image/upload/c_scale,w_400/v1666983166/Medig/53911-online-medical-assistance-animation_drgrai.gif"
     },
     {
-        eventKey: "home3",
-        title: "Home3",
-        heading: " from us You will alwasy get extra security ",
+        eventKey: "Accurate Results",
+        title: "Accurate Results",
+        heading: "Accurate Results",
         content: `
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -87,9 +87,9 @@ export const data = [
         image: "https://res.cloudinary.com/dl8hsgfaq/image/upload/c_scale,w_423/v1666983547/Medig/108385-medical-app_ybp2d1.gif"
     },
     {
-        eventKey: "home4",
-        title: "Home4",
-        heading: " from us You will alwasy get extra security ",
+        eventKey: "All In one solution",
+        title: "All In one solution",
+        heading: "All In one solution",
         content: `
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
