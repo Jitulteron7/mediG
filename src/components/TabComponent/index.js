@@ -8,7 +8,7 @@ function TabComponent() {
     return (
         // <div className='tab_container_change'>
             <Tabs
-                defaultActiveKey="home"
+                defaultActiveKey="Easy to use"
                 id="uncontrolled-tab-example"
                 className={`mb-4 tab_change_custom_style`}
                 style={{ width: "80%", display: "flex", justifyContent: "space-evenly" }}

@@ -19,8 +19,8 @@ const Home = () => {
                 <div className={classes.part1}>
                     <div className={classes.left}>
                         <div className={classes.head}>
-                            <h2>Go to here this is go on</h2>
-                            <h3>Test it the way</h3>
+                            <h2>Make healthcare easier and convient</h2>
+                            <h3>Decrease Repospitization rate</h3>
                         </div>
                         <div className={classes.head}>
                             <img src={img1} />
@@ -31,7 +31,7 @@ const Home = () => {
                             <img src={img2} />
                         </div>
                         <div className={classes.head}>
-                            <p>A new way to make the payment easy reliable and secure. You can mange all your transactions from your mobile phone</p>
+                            <p>A modern way to analyze healthcare data to improve the rehospitization rate and improve the user healthcare.</p>
                         </div>
 
                         <div className={classes.head}>
@@ -41,9 +41,9 @@ const Home = () => {
                 </div>
                 <div className={classes.part2}>
                     <div className={classes.numberContainer}>
-                       <div style={{backgroundColor:'#fff6ee',marginTop:'10px', width:'50%'}}>  <NumberContainer /></div>
+                        <div style={{ backgroundColor: '#fff6ee', marginTop: '10px', width: '50%' }}>  <NumberContainer /></div>
                         <div className={classes.styleBox}>
-                            
+
                         </div>
                     </div>
                     <div className={classes.why}>

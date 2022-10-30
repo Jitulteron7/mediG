@@ -7,7 +7,7 @@ import {useSelector} from "react-redux"
 
 const Schedular = () => {
     const state = useLocation()
-    const schedules = useSelector((state) => state.schedules);
+    const {schedules} = useSelector((state) => state.auth);
 
     return (
         <div className={classes.container}>

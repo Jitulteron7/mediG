@@ -23,10 +23,10 @@ const DashNav = () => {
                     </div>
                 </Link>
                 <div className={classes.ul_container}>
-                    <Link>All Patients</Link>
+                    <Link to={`/dash/${state.pathname.split("/")[2]}`}>All Patients</Link>
                     {
                         state.pathname.split("/")[2] === "hospital" ?
-                            <Link>All Doctors</Link> :
+                            <Link to={`/dash/hospital/doctors`}>All Doctors</Link> :
 
                             state.pathname.split("/")[2] === "patients" ?
                                 <Link>My Docter</Link> :
@@ -34,7 +34,7 @@ const DashNav = () => {
 
                     }
                     {state.pathname.split("/")[2] === "hospital" ?
-                        <Link>Add Doctors</Link> :
+                        <Link to={`/dash/hospital/addDoctor`}>Add Doctors</Link> :
                         <></>}
                     <Button>Logout</Button>
                 </div>

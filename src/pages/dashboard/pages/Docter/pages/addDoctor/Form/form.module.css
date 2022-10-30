@@ -1,0 +1,11 @@
+.container {
+    
+}
+.container .input_container{
+    display: grid;
+    gap: 10px;
+    
+}
+.container .input{
+    width: 100%;    
+}

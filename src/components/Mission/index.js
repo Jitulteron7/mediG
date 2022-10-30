@@ -8,18 +8,18 @@ import img3 from "../../assets/3.png";
 export const data = [
     {
         img: img1,
-        heading: "Text the mission",
-        content: "This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw,This mission is abg kdhf asda qweqw"
+        heading: "Reduce Hospitalization and rehospitalization",
+        content: "Reduce Hospitalization and rehospitalization using various tools and ml model"
     },
     {
         img: img2,
-        heading: "Text the mission",
-        content: "This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw,This mission is abg kdhf asda qweqw"
+        heading: "Digital Medical Records easy to access",
+        content: "Digital Medical Records easy to access by patients and doctors for better analysis"
     },
     {
         img: img3,
-        heading: "Text the mission",
-        content: "This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw, This mission is abg kdhf asda qweqw,This mission is abg kdhf asda qweqw"
+        heading: "Access to health education and services",
+        content: "Easy and efficent access to health education and health services"
     }
 ]
 

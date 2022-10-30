@@ -5,12 +5,15 @@ import PatientAnalytics from "../Docter/pages/PatientAnalytics";
 import Meets from "../Docter/pages/Meets";
 import Meet from "../Docter/pages/Meet";
 import Schedular from "../Docter/pages/Schedular";
-
+import AllDoctor from "../Docter/pages/AllDoctors";
+import AddDoctor from "../Docter/pages/addDoctor";
 const Hospital = () => {
     return (<div>
         <Routes>
             <Route path="/" element={<AllPatients />} />
-            <Route path="/:id" element={<PatientAnalytics />} />
+            <Route  extact path="/doctors" element={<AllDoctor />} />
+            <Route  extact path="/addDoctor" element={<AddDoctor />} />
+            <Route extact path="/:id" element={<PatientAnalytics />} />
             <Route path="/schedular/:id" element={<Schedular />} />
             <Route path="/meets" element={<Meets />} />
             <Route path="/meets/:id" element={<Meet/>} />

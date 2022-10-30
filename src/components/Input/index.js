@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./input.module.css";
 import { Form, InputGroup } from "react-bootstrap";
 const Input = (props) => {
-    const { type, placeholder, name, width, height, handleChange } = props;
+    const { type, placeholder, name, width, height, handleChange ,value} = props;
     return (
         <>
             {
@@ -34,6 +34,7 @@ const Input = (props) => {
                                 id="inputPassword5"
                                 onChange={handleChange}
                                 name={name}
+                                value={value}
                                 aria-describedby={"passwordHelpBlock"}
                                 placeholder={placeholder}
                             />
