@@ -19,7 +19,7 @@ const Home = () => {
                 <div className={classes.part1}>
                     <div className={classes.left}>
                         <div className={classes.head}>
-                            <h2>Make healthcare easier and convient</h2>
+                            <h2>Making healthcare easier</h2>
                             <h3>Decrease Repospitization rate</h3>
                         </div>
                         <div className={classes.head}>
